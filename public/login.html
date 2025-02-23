@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Civil Registration System</title>
+    <style>
+        body {
+            background: url('images/BirthandDeathimage2.jpg') no-repeat center center fixed; 
+            background-size: 100% 100%; /* Full screen cover */
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .login-container {
+            background: rgba(255, 255, 255, 0.8); /* Light background for visibility */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            height: auto;
+            text-align: center;
+        }
+
+        .form-holder {
+            margin-bottom: 15px;
+        }
+
+        .form-control {
+            width: 95%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 95%;
+            padding: 10px;
+            background-color: #007BFF;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .passwordforreg {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .passwordforreg a {
+            text-decoration: none;
+            color: #007BFF;
+        }
+
+        .passwordforreg a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-container">
+        <form action="/login" method="post">
+            <h3>Login</h3>
+            <div class="form-holder">
+                <input type="text" class="form-control" placeholder="Email" name="email" required>
+            </div>
+            <div class="form-holder">
+                <input type="password" class="form-control" placeholder="Password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <div class="passwordforreg">
+                <!-- <div class="formitpassword"><a href="sendotp.html">Forgot Password</a></div> -->
+            </div>
+        </form>
+    </div>
+    
+
+</body>
+</html>
